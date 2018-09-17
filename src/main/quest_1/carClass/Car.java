@@ -1,8 +1,8 @@
-package quest_1.CarClass;
+package main.quest_1.carClass;
 
-import quest_1.enumType.Color;
-import quest_1.enumType.Engine;
-import quest_1.enumType.Transmission;
+import main.quest_1.enumType.Color;
+import main.quest_1.enumType.Engine;
+import main.quest_1.enumType.Transmission;
 
 public class Car {
     private String brand;

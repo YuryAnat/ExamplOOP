@@ -1,12 +1,12 @@
-package main.java.quest_1.main;
+package main.quest_1.main;
 
-import quest_1.CarClass.Car;
-import quest_1.CarClass.FreightCar;
-import quest_1.CarClass.PassengerCar;
-import quest_1.enumType.Color;
-import quest_1.interfaceCar.AverageSpeed;
-import quest_1.interfaceCar.CarByColor;
-import quest_1.interfaceCar.ListCar;
+import main.quest_1.carClass.Car;
+import main.quest_1.carClass.FreightCar;
+import main.quest_1.carClass.PassengerCar;
+import main.quest_1.enumType.Color;
+import main.quest_1.interfaceCar.AverageSpeed;
+import main.quest_1.interfaceCar.CarByColor;
+import main.quest_1.interfaceCar.ListCar;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,7 +52,7 @@ public class Stock implements AverageSpeed, CarByColor, ListCar {
                 if (car.getColor().equals(Color.RED)) red++;
                 if (car.getColor().equals(Color.YELLOW)) yellow++;
             }
-            System.out.println("CarClass color: "+"\n\t Red: " + red
+            System.out.println("carClass color: "+"\n\t Red: " + red
                                             +"\n\t Green: " + green
                                             +"\n\t Blue: " + blue
                                             +"\n\t Yellow: " + yellow);

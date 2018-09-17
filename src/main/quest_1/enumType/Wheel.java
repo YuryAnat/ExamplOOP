@@ -1,4 +1,4 @@
-package quest_1.enumType;
+package main.quest_1.enumType;
 
 public enum  Wheel {
     RIGHT,LEFT

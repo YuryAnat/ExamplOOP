@@ -1,9 +1,9 @@
-package quest_1.main;
+package main.quest_1.main;
 
-import main.java.quest_1.main.Stock;
-import quest_1.CarClass.FreightCar;
-import quest_1.CarClass.PassengerCar;
-import quest_1.enumType.*;
+import main.quest_1.enumType.Color;
+import main.quest_1.carClass.FreightCar;
+import main.quest_1.carClass.PassengerCar;
+import main.quest_1.enumType.*;
 
 public class RunExampl {
     public static void main(String[] args) {

@@ -1,12 +1,16 @@
-package quest_1.CarClass;
+package main.quest_1.carClass;
 
-import quest_1.enumType.*;
+import main.quest_1.enumType.*;
 
 public class PassengerCar extends Car{
     private int numberOfPassengers;
     private Body body;
     private int numberOfDoors;
     private Wheel steeringWheel;
+
+    public PassengerCar(String brand, String model, Color color, Transmission transmission, Engine engine, float timeTo100) {
+        super(brand, model, color, transmission, engine, timeTo100);
+    }
 
     public PassengerCar(String brand, String model, Color color, Transmission transmission, Engine engine,
                         float timeTo100, int numberOfPassengers, Body body, int numberOfDoors, Wheel steeringWheel) {
