@@ -1,26 +1,27 @@
 package main.quest_1.main;
 
-import main.quest_1.enumType.Color;
-import main.quest_1.carClass.FreightCar;
-import main.quest_1.carClass.PassengerCar;
+import main.quest_1.carClass.brand.Bmw;
+import main.quest_1.carClass.brand.Toyota;
+import main.quest_1.carClass.brand.Vaz;
 import main.quest_1.enumType.*;
 
 public class RunExampl {
     public static void main(String[] args) {
 
-        FreightCar car1 = new FreightCar("Toyota", "Freight1", Color.RED, Transmission.AUTOMATIC,
-                                            Engine.DIESEL, 19.2f, 18);
-        FreightCar car2 = new FreightCar("Man", "Freight2", Color.BLUE, Transmission.MECHANIC,
-                Engine.PETROL, 20.2f, 18);
+        Vaz car1 = new Vaz("", "2101", Color.GREEN, Transmission.MECHANIC,
+                                            Engine.PETROL, 19.00f, Body.SEDAN);
 
-        PassengerCar car3 = new PassengerCar("Toyota", "Pass1", Color.YELLOW, Transmission.AUTOMATIC,
-                Engine.HYBRID, 12.2f, 5, Body.SEDAN, 4, Wheel.LEFT );
+        Toyota car2 = new Toyota("", "Sun", Color.BLUE, Transmission.AUTOMATIC,
+                Engine.HYBRID, 20.20f, Body.MINIVAN);
 
-        FreightCar car4 = new FreightCar("Toy", "Freight3", Color.YELLOW, Transmission.MECHANIC,
-                Engine.PETROL, 30.6f, 22);
+        Bmw car3 = new Bmw("", "Passat", Color.RED, Transmission.AUTOMATIC,
+                Engine.DIESEL, 16.02f, Body.SEDAN);
 
-        PassengerCar car5 = new PassengerCar("Jeep", "Pass2", Color.YELLOW, Transmission.MECHANIC,
-                Engine.HYBRID, 14.2f, 2, Body.OFF_ROAD, 2, Wheel.RIGHT );
+        Bmw car4 = new Bmw("", "X5", Color.RED, Transmission.AUTOMATIC,
+                Engine.PETROL, 14.60f, Body.OFF_ROAD);
+
+        Vaz car5 = new Vaz("Jeep", "Pass2", Color.YELLOW, Transmission.MECHANIC,
+                Engine.HYBRID, 18.02f, Body.SEDAN );
 
         Stock stock = new Stock();
         stock.addCar(car1);
@@ -30,7 +31,7 @@ public class RunExampl {
         stock.addCar(car5);
 
         stock.allCarToList(stock.getList());
-        System.out.println("Average speed: " + stock.averageSpeed(stock.getList()));
+        System.out.println("Average speed: " + stock.averageSpeed(stock.getList()) +"\n");
         stock.CarByColor(stock.getList());
     }
 }
